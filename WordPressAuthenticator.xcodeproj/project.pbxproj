@@ -14,6 +14,11 @@
 		3F550D4E23DA429B007E5897 /* AppSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F550D4D23DA429B007E5897 /* AppSelectorTests.swift */; };
 		3F550D5123DA4A9C007E5897 /* LinkMailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F550D5023DA4A9C007E5897 /* LinkMailPresenter.swift */; };
 		3F550D5323DA4AC6007E5897 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F550D5223DA4AC6007E5897 /* URLHandler.swift */; };
+		3FF9DDCD2719290400D411FD /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9DDCC2719290400D411FD /* DemoAppApp.swift */; };
+		3FF9DDCF2719290400D411FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9DDCE2719290400D411FD /* ContentView.swift */; };
+		3FF9DDD12719290700D411FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF9DDD02719290700D411FD /* Assets.xcassets */; };
+		3FF9DDD42719290700D411FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF9DDD32719290700D411FD /* Preview Assets.xcassets */; };
+		3FF9DDEA2719290700D411FD /* DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9DDE92719290700D411FD /* DemoAppUITestsLaunchTests.swift */; };
 		3FFF2FC123D7ED7C00D38C77 /* EmailClients.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF2FC023D7ED7C00D38C77 /* EmailClients.plist */; };
 		3FFF2FC323D7F53200D38C77 /* AppSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF2FC223D7F53200D38C77 /* AppSelector.swift */; };
 		7A7A9B9CD2D81959F9AB9AF6 /* Pods_WordPressAuthenticator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C736FF243DE333FCAB1C2614 /* Pods_WordPressAuthenticator.framework */; };
@@ -183,6 +188,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3FF9DDE42719290700D411FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5ED78EB207E976500A8FD8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF9DDC92719290400D411FD;
+			remoteInfo = DemoApp;
+		};
 		B5ED78FF207E976500A8FD8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5ED78EB207E976500A8FD8C /* Project object */;
@@ -220,6 +232,13 @@
 		3F550D4D23DA429B007E5897 /* AppSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelectorTests.swift; sourceTree = "<group>"; };
 		3F550D5023DA4A9C007E5897 /* LinkMailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkMailPresenter.swift; sourceTree = "<group>"; };
 		3F550D5223DA4AC6007E5897 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
+		3FF9DDCA2719290400D411FD /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF9DDCC2719290400D411FD /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
+		3FF9DDCE2719290400D411FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FF9DDD02719290700D411FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FF9DDD32719290700D411FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FF9DDE32719290700D411FD /* DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF9DDE92719290700D411FD /* DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3FFF2FC023D7ED7C00D38C77 /* EmailClients.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EmailClients.plist; sourceTree = "<group>"; };
 		3FFF2FC223D7F53200D38C77 /* AppSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelector.swift; sourceTree = "<group>"; };
 		5A441EC80D2B8D2209C2E228 /* Pods_WordPressAuthenticatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordPressAuthenticatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +419,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3FF9DDC72719290400D411FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF9DDE02719290700D411FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED78F0207E976500A8FD8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,6 +492,33 @@
 				3F550D4D23DA429B007E5897 /* AppSelectorTests.swift */,
 			);
 			path = "Email Client Picker";
+			sourceTree = "<group>";
+		};
+		3FF9DDCB2719290400D411FD /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9DDCC2719290400D411FD /* DemoAppApp.swift */,
+				3FF9DDCE2719290400D411FD /* ContentView.swift */,
+				3FF9DDD02719290700D411FD /* Assets.xcassets */,
+				3FF9DDD22719290700D411FD /* Preview Content */,
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		3FF9DDD22719290700D411FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9DDD32719290700D411FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FF9DDE62719290700D411FD /* DemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FF9DDE92719290700D411FD /* DemoAppUITestsLaunchTests.swift */,
+			);
+			path = DemoAppUITests;
 			sourceTree = "<group>";
 		};
 		6205895375D954F46B1DFE53 /* Pods */ = {
@@ -728,6 +788,8 @@
 				FF629D9522393500004C4106 /* WordPressAuthenticator.podspec */,
 				B5ED78F6207E976500A8FD8C /* WordPressAuthenticator */,
 				B5ED7901207E976500A8FD8C /* WordPressAuthenticatorTests */,
+				3FF9DDCB2719290400D411FD /* DemoApp */,
+				3FF9DDE62719290700D411FD /* DemoAppUITests */,
 				B5ED78F5207E976500A8FD8C /* Products */,
 				B5ED7910207E981400A8FD8C /* Frameworks */,
 				6205895375D954F46B1DFE53 /* Pods */,
@@ -739,6 +801,8 @@
 			children = (
 				B5ED78F4207E976500A8FD8C /* WordPressAuthenticator.framework */,
 				B5ED78FD207E976500A8FD8C /* WordPressAuthenticatorTests.xctest */,
+				3FF9DDCA2719290400D411FD /* DemoApp.app */,
+				3FF9DDE32719290700D411FD /* DemoAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -974,6 +1038,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3FF9DDC92719290400D411FD /* DemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF9DDF72719290800D411FD /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildPhases = (
+				3FF9DDC62719290400D411FD /* Sources */,
+				3FF9DDC72719290400D411FD /* Frameworks */,
+				3FF9DDC82719290400D411FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoApp;
+			productName = DemoApp;
+			productReference = 3FF9DDCA2719290400D411FD /* DemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FF9DDE22719290700D411FD /* DemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF9DDF92719290800D411FD /* Build configuration list for PBXNativeTarget "DemoAppUITests" */;
+			buildPhases = (
+				3FF9DDDF2719290700D411FD /* Sources */,
+				3FF9DDE02719290700D411FD /* Frameworks */,
+				3FF9DDE12719290700D411FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF9DDE52719290700D411FD /* PBXTargetDependency */,
+			);
+			name = DemoAppUITests;
+			productName = DemoAppUITests;
+			productReference = 3FF9DDE32719290700D411FD /* DemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B5ED78F3207E976500A8FD8C /* WordPressAuthenticator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5ED7908207E976500A8FD8C /* Build configuration list for PBXNativeTarget "WordPressAuthenticator" */;
@@ -1020,10 +1119,19 @@
 		B5ED78EB207E976500A8FD8C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Automattic;
 				TargetAttributes = {
+					3FF9DDC92719290400D411FD = {
+						CreatedOnToolsVersion = 13.0;
+						ProvisioningStyle = Automatic;
+					};
+					3FF9DDE22719290700D411FD = {
+						CreatedOnToolsVersion = 13.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3FF9DDC92719290400D411FD;
+					};
 					B5ED78F3207E976500A8FD8C = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1250;
@@ -1051,11 +1159,29 @@
 			targets = (
 				B5ED78F3207E976500A8FD8C /* WordPressAuthenticator */,
 				B5ED78FC207E976500A8FD8C /* WordPressAuthenticatorTests */,
+				3FF9DDC92719290400D411FD /* DemoApp */,
+				3FF9DDE22719290700D411FD /* DemoAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3FF9DDC82719290400D411FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF9DDD42719290700D411FD /* Preview Assets.xcassets in Resources */,
+				3FF9DDD12719290700D411FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF9DDE12719290700D411FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED78F2207E976500A8FD8C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1192,6 +1318,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3FF9DDC62719290400D411FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF9DDCF2719290400D411FD /* ContentView.swift in Sources */,
+				3FF9DDCD2719290400D411FD /* DemoAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF9DDDF2719290700D411FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF9DDEA2719290700D411FD /* DemoAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED78EF207E976500A8FD8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1340,6 +1483,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3FF9DDE52719290700D411FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF9DDC92719290400D411FD /* DemoApp */;
+			targetProxy = 3FF9DDE42719290700D411FD /* PBXContainerItemProxy */;
+		};
 		B5ED7900207E976500A8FD8C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5ED78F3207E976500A8FD8C /* WordPressAuthenticator */;
@@ -1348,6 +1496,204 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3FF9DDEB2719290800D411FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FF9DDEC2719290800D411FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FF9DDED2719290800D411FD /* Release-Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Alpha";
+		};
+		3FF9DDEE2719290800D411FD /* Release-Internal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Internal";
+		};
+		3FF9DDF32719290800D411FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = Debug;
+		};
+		3FF9DDF42719290800D411FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = Release;
+		};
+		3FF9DDF52719290800D411FD /* Release-Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = "Release-Alpha";
+		};
+		3FF9DDF62719290800D411FD /* Release-Internal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.DemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = "Release-Internal";
+		};
 		B5ED7906207E976500A8FD8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1754,6 +2100,28 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3FF9DDF72719290800D411FD /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF9DDEB2719290800D411FD /* Debug */,
+				3FF9DDEC2719290800D411FD /* Release */,
+				3FF9DDED2719290800D411FD /* Release-Alpha */,
+				3FF9DDEE2719290800D411FD /* Release-Internal */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF9DDF92719290800D411FD /* Build configuration list for PBXNativeTarget "DemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF9DDF32719290800D411FD /* Debug */,
+				3FF9DDF42719290800D411FD /* Release */,
+				3FF9DDF52719290800D411FD /* Release-Alpha */,
+				3FF9DDF62719290800D411FD /* Release-Internal */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5ED78EE207E976500A8FD8C /* Build configuration list for PBXProject "WordPressAuthenticator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
