@@ -69,6 +69,12 @@ public struct WordPressAuthenticatorConfiguration {
     /// Flag indicating if the Sign In With Apple option should be displayed.
     ///
     let enableSignInWithApple: Bool
+    
+    /// Flag indicating if the Sign In With Google option should be displayed.
+    let enableSignInWithGoogle: Bool
+    
+    /// Flag indicating if the Sign In With Store Address option should be displayed.
+    let enableEnterWithStoreAddress: Bool
 
     /// Flag indicating if signing up via Google is enabled.
     /// This only applies to the unified Google flow.
@@ -111,6 +117,8 @@ public struct WordPressAuthenticatorConfiguration {
                  showLoginOptions: Bool = false,
                  enableSignUp: Bool = true,
                  enableSignInWithApple: Bool = false,
+                 enableSignInWithGoogle: Bool = true,
+                 enableEnterWithStoreAddress: Bool = true,
                  enableSignupWithGoogle: Bool = false,
                  enableUnifiedAuth: Bool = false,
                  enableUnifiedCarousel: Bool = false,
@@ -131,6 +139,8 @@ public struct WordPressAuthenticatorConfiguration {
         self.showLoginOptions = showLoginOptions
         self.enableSignUp = enableSignUp
         self.enableSignInWithApple = enableSignInWithApple
+        self.enableSignInWithGoogle = enableSignInWithGoogle
+        self.enableEnterWithStoreAddress = enableEnterWithStoreAddress
         self.enableUnifiedAuth = enableUnifiedAuth
         self.enableUnifiedCarousel = enableUnifiedCarousel
         self.displayHintButtons = displayHintButtons

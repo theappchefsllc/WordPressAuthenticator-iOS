@@ -193,16 +193,21 @@ class LoginPrologueViewController: LoginViewController {
     /// Displays the Unified prologue buttons.
     ///
     private func buildUnifiedPrologueButtons(_ buttonViewController: NUXButtonViewController) {
-        let displayStrings = WordPressAuthenticator.shared.displayStrings
-        let loginTitle = displayStrings.continueWithWPButtonTitle
-        let siteAddressTitle = displayStrings.enterYourSiteAddressButtonTitle
+        if (configuration.enableEnterWithStoreAddress) {
+            let displayStrings = WordPressAuthenticator.shared.displayStrings
+            let loginTitle = displayStrings.continueWithWPButtonTitle
+            let siteAddressTitle = displayStrings.enterYourSiteAddressButtonTitle
 
-        if configuration.continueWithSiteAddressFirst {
-            buildUnifiedPrologueButtonsWithSiteAddressFirst(buttonViewController, loginTitle: loginTitle, siteAddressTitle: siteAddressTitle)
-            return
+            if configuration.continueWithSiteAddressFirst {
+                buildUnifiedPrologueButtonsWithSiteAddressFirst(buttonViewController, loginTitle: loginTitle, siteAddressTitle: siteAddressTitle)
+                return
+            }
+
+            buildDefaultUnifiedPrologueButtons(buttonViewController, loginTitle: loginTitle, siteAddressTitle: siteAddressTitle)
+        } else {
+            let loginTitle = NSLocalizedString("Log In", comment: "Button title.  Tapping takes the user to the login form.")
+            buildUnifiedPrologueButtonsWithoutSiteAddress(buttonViewController, loginTitle: loginTitle)
         }
-
-        buildDefaultUnifiedPrologueButtons(buttonViewController, loginTitle: loginTitle, siteAddressTitle: siteAddressTitle)
     }
 
     private func buildDefaultUnifiedPrologueButtons(_ buttonViewController: NUXButtonViewController, loginTitle: String, siteAddressTitle: String) {
@@ -235,6 +240,21 @@ class LoginPrologueViewController: LoginViewController {
 
         setButtonViewControllerBackground(buttonViewController)
     }
+    
+    private func buildUnifiedPrologueButtonsWithoutSiteAddress(_ buttonViewController: NUXButtonViewController, loginTitle: String) {
+        guard configuration.enableUnifiedAuth == true else {
+            return
+        }
+
+        setButtonViewMargins(forWidth: view.frame.width)
+
+        buttonViewController.setupTopButton(title: loginTitle, isPrimary: false, accessibilityIdentifier: "Prologue Log In Button", onTap: loginTapCallback())
+
+        showCancelIfNeccessary(buttonViewController)
+
+        setButtonViewControllerBackground(buttonViewController)
+    }
+
 
     private func siteAddressTapCallback() -> NUXButtonViewController.CallBackType {
         return { [weak self] in

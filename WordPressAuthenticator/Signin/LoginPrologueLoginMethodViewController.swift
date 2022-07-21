@@ -60,7 +60,9 @@ class LoginPrologueLoginMethodViewController: NUXViewController {
             self.emailTapped?()
         }
 
-        buttonViewController.setupButtomButtonFor(socialService: .google, onTap: handleGoogleButtonTapped)
+        if WordPressAuthenticator.shared.configuration.enableSignInWithGoogle {
+            buttonViewController.setupButtomButtonFor(socialService: .google, onTap: handleGoogleButtonTapped)
+        }
 
         if !LoginFields().restrictToWPCom && selfHostedTapped != nil {
             let selfHostedLoginButton = WPStyleGuide.selfHostedLoginButton(alignment: .center)

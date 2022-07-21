@@ -179,18 +179,6 @@ private extension GetStartedViewController {
 
         stackView.addArrangedSubview(continueButton)
 
-        if WordPressAuthenticator.shared.configuration.whatIsWPComURL != nil {
-            let stackViewWithCenterAlignment = UIStackView()
-            stackViewWithCenterAlignment.axis = .vertical
-            stackViewWithCenterAlignment.alignment = .center
-
-            let button = WPStyleGuide.whatIsWPComButton()
-            button.addTarget(self, action: #selector(whatIsWPComButtonTapped(_:)), for: .touchUpInside)
-            stackViewWithCenterAlignment.addArrangedSubview(button)
-
-            stackView.addArrangedSubview(stackViewWithCenterAlignment)
-        }
-
         tableView.tableFooterView = stackView
         tableView.updateFooterHeight()
     }
@@ -198,13 +186,15 @@ private extension GetStartedViewController {
     /// Style the "OR" divider.
     ///
     func configureDivider() {
-        let color = WordPressAuthenticator.shared.unifiedStyle?.borderColor ?? WordPressAuthenticator.shared.style.primaryNormalBorderColor
-        leadingDividerLine.backgroundColor = color
-        leadingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
-        trailingDividerLine.backgroundColor = color
-        trailingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
-        dividerLabel.textColor = color
-        dividerLabel.text = NSLocalizedString("Or", comment: "Divider on initial auth view separating auth options.").localizedUppercase
+        if WordPressAuthenticator.shared.configuration.enableSignInWithGoogle || WordPressAuthenticator.shared.configuration.enableSignInWithApple {
+            let color = WordPressAuthenticator.shared.unifiedStyle?.borderColor ?? WordPressAuthenticator.shared.style.primaryNormalBorderColor
+            leadingDividerLine.backgroundColor = color
+            leadingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
+            trailingDividerLine.backgroundColor = color
+            trailingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
+            dividerLabel.textColor = color
+            dividerLabel.text = NSLocalizedString("Or", comment: "Divider on initial auth view separating auth options.").localizedUppercase
+        }
     }
 
     // MARK: - Continue Button Action
@@ -635,11 +625,15 @@ private extension GetStartedViewController {
             buttonViewController.setupTopButtonFor(socialService: .apple, onTap: appleTapped)
         }
 
-        buttonViewController.setupButtomButtonFor(socialService: .google, onTap: googleTapped)
-
-        let termsButton = WPStyleGuide.signupTermsButton()
-        buttonViewController.stackView?.addArrangedSubview(termsButton)
-        termsButton.addTarget(self, action: #selector(termsTapped), for: .touchUpInside)
+        if WordPressAuthenticator.shared.configuration.enableSignInWithGoogle {
+            buttonViewController.setupButtomButtonFor(socialService: .google, onTap: googleTapped)
+        }
+        
+        if WordPressAuthenticator.shared.configuration.enableSignInWithApple || WordPressAuthenticator.shared.configuration.enableSignInWithGoogle {
+            let termsButton = WPStyleGuide.signupTermsButton()
+            buttonViewController.stackView?.addArrangedSubview(termsButton)
+            termsButton.addTarget(self, action: #selector(termsTapped), for: .touchUpInside)
+        }
     }
 
     @objc func appleTapped() {

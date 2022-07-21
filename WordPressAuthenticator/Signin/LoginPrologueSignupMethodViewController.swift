@@ -56,7 +56,9 @@ class LoginPrologueSignupMethodViewController: NUXViewController {
             self?.emailTapped?()
         }
 
-        buttonViewController.setupButtomButtonFor(socialService: .google, onTap: handleGoogleButtonTapped)
+        if WordPressAuthenticator.shared.configuration.enableSignInWithGoogle {
+            buttonViewController.setupButtomButtonFor(socialService: .google, onTap: handleGoogleButtonTapped)
+        }
 
         let termsButton = WPStyleGuide.termsButton()
         termsButton.on(.touchUpInside) { [weak self] _ in
