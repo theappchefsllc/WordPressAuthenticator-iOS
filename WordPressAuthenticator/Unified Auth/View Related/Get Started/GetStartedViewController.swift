@@ -186,15 +186,17 @@ private extension GetStartedViewController {
     /// Style the "OR" divider.
     ///
     func configureDivider() {
-        if WordPressAuthenticator.shared.configuration.enableSignInWithGoogle || WordPressAuthenticator.shared.configuration.enableSignInWithApple {
-            let color = WordPressAuthenticator.shared.unifiedStyle?.borderColor ?? WordPressAuthenticator.shared.style.primaryNormalBorderColor
-            leadingDividerLine.backgroundColor = color
-            leadingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
-            trailingDividerLine.backgroundColor = color
-            trailingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
-            dividerLabel.textColor = color
-            dividerLabel.text = NSLocalizedString("Or", comment: "Divider on initial auth view separating auth options.").localizedUppercase
-        }
+        let shouldShowDivider = WordPressAuthenticator.shared.configuration.enableSignInWithGoogle || WordPressAuthenticator.shared.configuration.enableSignInWithApple;
+        let color = WordPressAuthenticator.shared.unifiedStyle?.borderColor ?? WordPressAuthenticator.shared.style.primaryNormalBorderColor
+        leadingDividerLine.backgroundColor = color
+        leadingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
+        trailingDividerLine.backgroundColor = color
+        trailingDividerLineWidth.constant = WPStyleGuide.hairlineBorderWidth
+        dividerLabel.textColor = color
+        dividerLabel.text = NSLocalizedString("Or", comment: "Divider on initial auth view separating auth options.").localizedUppercase
+        dividerLabel.isHidden = !shouldShowDivider
+        leadingDividerLine.isHidden = !shouldShowDivider
+        trailingDividerLine.isHidden = !shouldShowDivider
     }
 
     // MARK: - Continue Button Action
